@@ -1,0 +1,39 @@
+:root{--cor: #61358C;--fonte: "sans"}
+@font-face {
+    font-family: "sans";
+    src: url(..ldfcomicsans-font\Ldfcomicsansbold-zgma.ttf);
+   
+}
+body{
+    background: linear-gradient( #683b95, rgb(187, 0, 174));
+    font-family: var(--fonte) cursive;
+    font-size: 15px;
+    background-repeat: no-repeat;
+
+}
+h1,h2{
+    margin: px;
+    text-align: center;
+    color:white ;
+    
+}
+h3{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+p{
+    line-height: 0px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-family: var(--fonte), cursive;
+    margin: 50px;
+
+    
+}
+
+
+
+
+

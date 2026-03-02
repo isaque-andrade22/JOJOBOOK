@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../test api"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "3DS"
+	}
+}
