@@ -4,11 +4,21 @@
     src: url(..ldfcomicsans-font\Ldfcomicsansbold-zgma.ttf);
    
 }
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: block;
+
+
+}
 body{
-    background: linear-gradient( #683b95, rgb(187, 0, 174));
+    background: linear-gradient( #591902,#BF681B );
     font-family: var(--fonte) cursive;
     font-size: 15px;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 
 }
 h1,h2{
@@ -30,6 +40,12 @@ p{
     font-family: var(--fonte), cursive;
     margin: 50px;
 
+    
+}
+footer{
+    margin-bottom: 0px;
+    position: bottom; 
+    padding: 0;
     
 }
 
