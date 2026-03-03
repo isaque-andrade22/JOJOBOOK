@@ -9,11 +9,9 @@ header{
     color: white;
     text-align: center;
     display: block;
-
-
 }
 body{
-    background: linear-gradient( #591902,#BF681B );
+    background: linear-gradient( #8d2803,#BF681B );
     font-family: var(--fonte) cursive;
     font-size: 15px;
     background-repeat: no-repeat;
@@ -23,24 +21,22 @@ body{
 }
 h1,h2{
     margin: px;
-    text-align: center;
+    text-align: left;
     color:white ;
     
 }
 h3{
-    text-align: center;
+    text-align: left;
     color: white;
     font-size: 200%;
 }
 p{
     line-height: 0px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     color: white;
     font-family: var(--fonte), cursive;
     margin: 50px;
-
-    
 }
 footer{
     margin-bottom: 0px;
@@ -48,7 +44,11 @@ footer{
     padding: 0;
     
 }
-
+iframe{
+    position: right;
+    display: flex;
+    width: 40%;
+}
 
 
 
