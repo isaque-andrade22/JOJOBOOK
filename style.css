@@ -1,9 +1,6 @@
-:root{--cor: #61358C;--fonte: "sans"}
-@font-face {
-    font-family: "sans";
-    src: url(..ldfcomicsans-font\Ldfcomicsansbold-zgma.ttf);
-   
-}
+:root{--cor: #61358C}
+
+
 header{
     background-color: black;
     color: white;
@@ -12,7 +9,7 @@ header{
 }
 body{
     background: linear-gradient( #8d2803,#BF681B );
-    font-family: var(--fonte) cursive;
+    font-family: Arial, Helvetica, sans-serif, cursive;
     font-size: 15px;
     background-repeat: no-repeat;
     margin: 0;
@@ -35,7 +32,7 @@ p{
     font-size: 20px;
     text-align: left;
     color: white;
-    font-family: var(--fonte), cursive;
+    font-family:Arial, Helvetica, sans-serif, cursive;
     margin: 50px;
 }
 footer{
@@ -47,9 +44,8 @@ footer{
 iframe{
     position: right;
     display: flex;
-    width: 40%;
+    width: 40%; 
 }
-
 
 
 
