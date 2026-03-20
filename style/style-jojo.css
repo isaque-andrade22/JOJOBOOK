@@ -1,18 +1,40 @@
 body{
-    background-color: purple;
+    background: linear-gradient(black, rgb(136, 0, 116));
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    margin-top: 0px;
+    margin: 0;
 }
 header{
-    display: block;
+    height: 70px;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 30px;
+
 }
-img{
-    width: 140PX;
+.logo{
+    width: 200px;
+
 }
 p{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: comic sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     text-align: top;
-    margin-top: 10px;
+    padding-top: 12px ;
+    padding-left: 150px;
+    margin: 0px;
+
+}
+.banner{
+    object-fit: contain;
+    display: flex; 
+    width: 1000px;
+    opacity: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img{
+    max-width: 100%;
 }
