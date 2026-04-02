@@ -4,13 +4,28 @@ damos uma classe/id so pra *ELA* diretamente na tag e mudamos aqui no código cs
 /*Só precisariamos de mais de um, 
 se o css das paginas fossem completamente diferentes ou quisermos alternar todo o estilo da pagina pro algum botão ou função dela*/
 
+:root{ /* Cores, assim fica mais fácil mudar dps ou criar temas (claro e escuro) no futuro */
+    --BgColor: rgb(136, 0, 116); 
+    --BgGradColor: black;
+    --TextColor: white;
+}
+
+
 body{
-    background: linear-gradient(black, rgb(136, 0, 116));
-    color: white;
+    background: linear-gradient(var(--BgGradColor), var(--BgColor) );
+    color: var(--TextColor);
     font-family: 'Courier New', Courier, monospace;
     margin-top: 0px;   
     margin: 0;
 
+    min-height: 100vh; /*fazer o body ocupar toda a tela dessa merda e parar de repetir o gradiente ou bugar*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+main{
+    flex-grow: 1; /*aumentar o main pra empurrar o footer pro final*/
 }
 header{
     height: 70px;
@@ -23,9 +38,9 @@ header{
     width: 200px;
 
 }
-p{
+h1{
     font-family: comic sans-serif;
-    color: white;
+    color: var(--TextColor);
     font-size: 60px;
     text-align: top;
     padding-top: 12px ;
@@ -48,23 +63,24 @@ img{
     
     max-width: 100%;
 }
-h1{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif cursive;    
+
+h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;    
 }
 
 a{
-    color: white;
+    color: var(--TextColor);
     text-decoration: none;
     display: block;
     
 }
 
-button{
+button{ /*Tirei os botoes, logo aqui é meio inutil, mas vou deixar caso vc queira so "adaptar" esse layout que vc fez pros botoes la no nav que coloquei*/
 
     background: local;
     text-align: center;
 
-    color: white;
+    color: var(--TextColor);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
 
     width: 219px;
@@ -81,12 +97,18 @@ footer{
     padding-top: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
     font-size: 30px;
+
+    padding: 20px 0; /* Arrumei o footer dps das mudanças do html, que ele n tava do tamanho certo*/
+}
+
+footer p {
+    margin: 0; /*tirei a margin enorme do p pra o footer n ser gigantesco*/
 }
 
 /*body e imagem que vc fez para a parte 1, mas agora usando a class e sem arquivo separado*/
 
 body.parte1{
-    background-color: #B656E0;
+    background-color: var(--BgColor);
 } 
 img.ImgPt1{
     display: block;
