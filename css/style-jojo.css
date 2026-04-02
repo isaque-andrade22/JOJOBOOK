@@ -1,3 +1,9 @@
+/*NÃO PRECISAMOS DE 9 CSS BRO! as paginas herdam o css base, se precisamos de algo diferente em uma pagina, 
+damos uma classe/id so pra *ELA* diretamente na tag e mudamos aqui no código css unico*/
+
+/*Só precisariamos de mais de um, 
+se o css das paginas fossem completamente diferentes ou quisermos alternar todo o estilo da pagina pro algum botão ou função dela*/
+
 body{
     background: linear-gradient(black, rgb(136, 0, 116));
     color: white;
@@ -75,4 +81,15 @@ footer{
     padding-top: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
     font-size: 30px;
+}
+
+/*body e imagem que vc fez para a parte 1, mas agora usando a class e sem arquivo separado*/
+
+body.parte1{
+    background-color: #B656E0;
+} 
+img.ImgPt1{
+    display: block;
+    width: 1280px;
+    height: 1000px;
 }
