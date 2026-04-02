@@ -9,59 +9,47 @@
 </head>
 
 <body>
-  <header>
+  <header> <!--TIREI A DIV FANTASMA, E TBM TINHA UM CSS PERDIDO NELA >_< -->
 
-  <div  flex; align-items: center;></div>
-    <a href="../pages/JOJOBOOK.html">
-     <img class="logo" src="../img/JoJo's_Bizarre_Adventure_logo.png" style="float: left; height: auto;" alt="logo">
-   </a>  
-  <p>JOJOBOOK</p>
-  </div>
+    <a href="../pages/jojobook.html"> <!-- CUIDADO COM AS LETRAS MAIUSCULAS (JOJOBOOK), elas dão erro em servidores linux e quero morrer-->
+      <img class="logo" src="../img/jojo_logo.png" style="float: left; height: auto;" alt="logo">
+    </a>  
+    <h1>JOJOBOOK</h1> <!-- Titulo pricipal da página, SEMPRE O H1 PARA CHAMAR A ATENÇÃO DOS GURI GOONERS QUE ACESSAM A PAGINA! -->
 
 </header>
-<h1>Aqui na JOJOBOOK voce encontra todas as informações sobre o Anime/manga JoJo's Bizarre Adventure</h1>
 
-<div class="botao">
+<main> <!-- Vc colocou tudo numa div com clases "botoes", o  que é horrivel para semantica. O certo é main pq é o principal da página.-->
+<h2>Aqui na JOJOBOOK voce encontra todas as informações sobre o Anime/manga JoJo's Bizarre Adventure</h2> <!-- O h1 aqui virou h2 pra n tirar o foco do titulo grande.--> 
 
-<button class="button">
-<a href="parte1.html" class="buttom">Phantom Blood</a>
-</button>
+<nav> <!-- Mano, botões são usados so pra linkar scripts e funções no html semântico. Usar eles aqui é pedir pra ter dor de cabeça-->
+  <ul> <!--  Ai a div dos botões é completamente desnesseria ja que colocamos ele numa nav e numa ul, ate podemos so copiar elas em todo site e gg.-->
+  <li><a href="parte1.html">Phantom Blood</a></li> <!-- É bom so usar o link solto dentro da tag nav e uma lista (pra organizar melhor) e dps transformamos em botoes so no css pela aparencia-->
 
-<button class="buttom">
-  <a href="parte2.html">Battle Tendency</a>
-</button>
+  <li><a href="parte2.html">Battle Tendency</a></li>
 
-<button class="buttom">
-  <a href="parte3.html">Stardust Crusaders</a>
-</button>
+  <li><a href="parte3.html">Stardust Crusaders</a></li>
 
-<button class="buttom">
-  <a href="parte4.html">Diamond is Unbreakable</a>
-</button>
+  <li><a href="parte4.html">Diamond is Unbreakable</a></li>
 
-<button class="buttom">
-  <a href="parte5.html">Vento Aureo</a>
-</button>
+  <li><a href="parte5.html">Vento Aureo</a></li>
 
-<button class="buttom">
-  <a href="parte6.html">Stone Ocean</a>
-</button>
+  <li><a href="parte6.html">Stone Ocean</a></li>
 
-<button class="buttom">
-  <a href="parte7.html">Steel Ball Run</a>
-</button>
+  <li><a href="parte7.html">Steel Ball Run</a></li>
 
-<button class="buttom">
-  <a href="parte8.html">JoJolion</a>
-</button>
+  <li><a href="parte8.html">JoJolion</a></li>
+  </ul>
+</nav>
 
-</div>
+<figure> <!-- Só pra melhorar e deixar mais bonitinho kkkk n é necessario de fato-->
+<img class="banner" src="../img/banner_all_jojos.jpg" alt="">
+</figure>
+
+</main>
 
 
-<img class="banner" src="../img/jojos-bizarre-3840x2160-13742.jpg" alt="">
-
-<footer>
-  ©Isaque
+<footer> <!-- Só me adicionei, pq sou bicha e quero créditos autorais 😊-->
+  <p>©Isaque and Lucas (>_<)</p> <!-- Esqueceu totalmente a tag e so meteu um texto do nada kkkk é um milagre n der dado problema la no css kkk-->
 </footer>
 </body>
 </html>
