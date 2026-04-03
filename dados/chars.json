@@ -1,0 +1,25 @@
+
+
+[
+  {
+    "id": 1,
+    "nome": "Jonathan Joestar",
+    "imagem": "../img/Jonathan_Joestar.png",
+    "stand": null,
+    "parte": "Phantom Blood"
+  },
+  {
+    "id": 2,
+    "nome": "Joseph Joestar",
+    "imagem": "../img/joseph.webp",
+    "stand": "Hermit Purple",
+    "parte": "Battle Tendency"
+  },
+  {
+    "id": 3,
+    "nome": "Jotaro Kujo",
+    "imagem": "../img/Jotaro_Kujo.webp",
+    "stand": "Star Platinum",
+    "parte": "Stardust Crusaders"
+  }
+]
