@@ -91,6 +91,7 @@ footer{
     font-size: 35px;
     padding-bottom: 20px;
     text-align: left;
+    padding: 20px 0;
 
 
 }
@@ -130,6 +131,77 @@ nav.navPT1 ul li:not(:last-child){
 #cabecalhoPT1{
     size: auto;
 }
+/* PÁGINA MOLDE PARTES*/
+
+div.grid-galeria{
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+section{
+    margin: 50px 20px;
+}
+
+section figure{
+    max-width: 350px;
+    background-color: var(--BgColorCards);
+    border: solid 3px var(--borderCards);
+    border-radius: 5px;
+
+    padding: 15px;
+    justify-self: center;
+
+    opacity: 0.8;
+
+    transition: all 0.1s ease-in-out;
+}
+
+section figure:hover{
+    scale: 1.1;
+
+    opacity: 1;
+
+    transform: translateY(-50px);
+}
+
+section figure h3{
+    text-align: center;
+    
+}
+
+section figure img{
+    max-width: 250px;
+
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+button.VerMais{
+    display: block;
+    margin: 0 auto;
+    padding: 12px 20px;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    border: 0;
+    text-transform: uppercase;
+
+    transition: all 0.2s ease-in-out;
+}
+
+button.VerMais:hover{
+    scale: 1.1;
+    text-decoration: underline;
+}
+
+
 
 .moldura{
 
