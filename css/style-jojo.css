@@ -223,7 +223,8 @@ img.imagem_moldura{
     padding-top: 30px;  
     
 }
-figure figcaption{
+
+.nome_personagem{
     background-color: black;
 }
 .container_biografia h3{
