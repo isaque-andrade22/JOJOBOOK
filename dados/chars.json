@@ -145,7 +145,7 @@
     "id": 1,
     "nome": "Star Platinum",
     "usuario": "Jotaro Kujo",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -153,7 +153,7 @@
     "id": 2,
     "nome": "Crazy Diamonds",
     "usuario": "Josuke Higashikata",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -161,7 +161,7 @@
     "id": 3,
     "nome": "Golden experience",
     "usuario": "Giorno Giovanna",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -169,7 +169,7 @@
     "id": 4,
     "nome": "Jolyne Kujoh",
     "usuario": "Stone Free",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -177,7 +177,7 @@
     "id": 5,
     "nome": "Echoes",
     "usuario": "Koichi Hirose",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -185,7 +185,7 @@
     "id": 5,
     "nome": "Echoes",
     "usuario": "Koichi Hirose",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -193,7 +193,7 @@
     "id": 5,
     "nome": "Echoes",
     "usuario": "Koichi Hirose",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -201,7 +201,7 @@
     "id": 5,
     "nome": "Echoes",
     "usuario": "Koichi Hirose",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   },
@@ -209,7 +209,7 @@
     "id": 5,
     "nome": "Echoes",
     "usuario": "Koichi Hirose",
-    "overrall": "a",
+    "overall": "a",
     "imagem": "../img/star_platinum.png",
     "parte": "Stardust Crusaders"
   }

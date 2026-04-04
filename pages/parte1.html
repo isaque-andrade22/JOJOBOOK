@@ -49,7 +49,7 @@
     <figure v-for="char in DadosChars.slice(0, LimiteChars)" :key="char.id">
         <h3>{{char.nome}}</h3> <!-- Nome personagem -->
 
-        <img :src="char.imagem" alt="" class="pfp">
+        <img :src="char.imagem" :alt="'Foto de ' + char.nome" class="pfp">
 
         <figcaption> <!-- Poder ou stand ou qualquer outra coisa -->
             <p>Texto de teste do PERSONAGENS</p>
@@ -71,11 +71,11 @@
     <div class="grid-galeria">
     <figure v-for="stand in DadosStands.slice(0, LimiteStands)" :key="stand.id">
         <h3> {{stand.nome}}</h3> <!-- Nome Stand -->
-        <img :src="stand.imagem" alt="" class="pfp">
+        <img :src="stand.imagem" :alt="'Foto de ' + stand.nome + ' Usuário ' + stand.usuario" class="pfp">
 
         <figcaption> <!-- Usuário ou os atributos do Stand -->
             <p>Usuário: {{stand.usuario}}</p>
-            <p>Overrall: {{stand.overrall}}</p>
+            <p>Overrall: {{stand.overall}}</p>
         </figcaption> 
     </figure>
     </div>
