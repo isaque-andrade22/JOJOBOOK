@@ -29,7 +29,18 @@ createApp({
         },
         
         ExpandirBotao() {
-            this.LimiteAtual +=4
+            if (this.LimiteAtual <= this.DadosJson.length) {
+                this.LimiteAtual +=4
+            } else {
+                this.LimiteAtual = 4;
+                this.$refs.tituloPersonagens.scrollIntoView({ behavior: 'smooth' })
+            }
+        },
+
+        RetrairBotao() {
+            if (this.LimiteAtual < 4) {
+                this.LimiteAtual -=4
+            } else {return}
         }
     }
 }).mount('#app');

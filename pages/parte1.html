@@ -43,7 +43,7 @@
 
     <section>
 
-    <h2>PERSONAGENS</h2>
+    <h2 ref="tituloPersonagens">PERSONAGENS</h2>
 
     <div class="grid-galeria">
     <figure v-for="char in DadosJson.slice(0, LimiteAtual)" :key="char.id">
@@ -61,7 +61,7 @@
     </figure>
     </div>
 
-    <button class="VerMais" @click="ExpandirBotao" v-if="LimiteAtual < DadosJson.length">Ver mais...</button>
+    <button class="VerMais" @click="ExpandirBotao"> {{ LimiteAtual < DadosJson.length ? 'Ver mais...' : 'Ver menos...' }}</button>
 
     </section>
 
