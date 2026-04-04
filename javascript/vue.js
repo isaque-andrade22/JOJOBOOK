@@ -26,6 +26,10 @@ createApp({
             console.log(dados);
 
             this.DadosJson = dados
+        },
+        
+        ExpandirBotao() {
+            this.LimiteAtual +=4
         }
     }
 }).mount('#app');
