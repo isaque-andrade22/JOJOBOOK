@@ -39,109 +39,48 @@
 
 </header>
 
-<main>
+<main id="app">
 
     <section>
 
-    <h2>PERSONAGENS</h2>
+    <h2 ref="tituloPersonagens">PERSONAGENS</h2>
 
     <div class="grid-galeria">
-    <figure>
-        <h3>TESTE</h3> <!-- Nome personagem -->
+    <figure v-for="char in DadosChars.slice(0, LimiteChars)" :key="char.id">
+        <h3>{{char.nome}}</h3> <!-- Nome personagem -->
 
-        <img src="../img/Jonathan_Joestar.png" alt="" class="pfp">
+        <img :src="char.imagem" :alt="'Foto de ' + char.nome" class="pfp">
 
         <figcaption> <!-- Poder ou stand ou qualquer outra coisa -->
             <p>Texto de teste do PERSONAGENS</p>
-            <p>Função: JOJO</p>
-            <p>Idade: 17 anos</p>
-            <p>Poder: Hamon</p>
+            <p>Função: {{char.funcao}}</p>
+            <p>Idade: {{char.idade}}</p>
+            <p>Poder: {{char.stand}}</p>
         </figcaption> 
 
-    </figure>
-    
-
-    <figure>
-        <h3>TESTE</h3>
-        <img src="../img/Jonathan_Joestar.png" alt="" class="pfp">
-        <figcaption> <!-- Poder ou stand ou qualquer outra coisa -->
-            <p>Texto de teste do PERSONAGENS</p>
-            <p>Função: JOJO</p>
-            <p>Idade: 17 anos</p>
-            <p>Poder: Hamon</p>
-        </figcaption> 
-    </figure>
-
-    <figure>
-        <h3>TESTE</h3>
-        <img src="../img/Jonathan_Joestar.png" alt="" class="pfp">
-        <figcaption> <!-- Poder ou stand ou qualquer outra coisa -->
-            <p>Texto de teste do PERSONAGENS</p>
-            <p>Função: JOJO</p>
-            <p>Idade: 17 anos</p>
-            <p>Poder: Hamon</p>
-        </figcaption> 
-    </figure>
-
-    <figure>
-        <h3>TESTE</h3>
-        <img src="../img/Jonathan_Joestar.png" alt="" class="pfp">
-        <figcaption> <!-- Poder ou stand ou qualquer outra coisa -->
-            <p>Texto de teste do PERSONAGENS</p>
-            <p>Função: JOJO</p>
-            <p>Idade: 17 anos</p>
-            <p>Poder: Hamon</p>
-        </figcaption> 
     </figure>
     </div>
 
-    <button class="VerMais">Ver mais...</button>
+    <button class="VerMais" @click="ExpandirBotao('personagens')"> {{ LimiteChars < DadosChars.length ? 'Ver mais...' : 'Ver menos...' }}</button>
 
     </section>
 
     <section>
-    <h2>STANDS</h2>
+    <h2 ref="tituloStands">STANDS</h2>
 
     <div class="grid-galeria">
-    <figure>
-        <h3>TESTE</h3> <!-- Nome Stand -->
-        <img src="../img/joseph.webp" alt="" class="pfp">
+    <figure v-for="stand in DadosStands.slice(0, LimiteStands)" :key="stand.id">
+        <h3> {{stand.nome}}</h3> <!-- Nome Stand -->
+        <img :src="stand.imagem" :alt="'Foto de ' + stand.nome + ' Usuário ' + stand.usuario" class="pfp">
 
         <figcaption> <!-- Usuário ou os atributos do Stand -->
-            <p>Usuário: Jotaro Kujo</p>
-            <p>Overrall: A</p>
-        </figcaption> 
-    </figure>
-
-    <figure>
-        <h3>TESTE</h3>
-        <img src="../img/joseph.webp" alt="" class="pfp">
-        <figcaption> <!-- Usuário ou os atributos do Stand -->
-            <p>Usuário: Jotaro Kujo</p>
-            <p>Overrall: A</p>
-        </figcaption> 
-    </figure>
-
-    <figure>
-        <h3>TESTE</h3>
-        <img src="../img/joseph.webp" alt="" class="pfp">
-        <figcaption> <!-- Usuário ou os atributos do Stand -->
-            <p>Usuário: Jotaro Kujo</p>
-            <p>Overrall: A</p>
-        </figcaption> 
-    </figure>
-
-    <figure>
-        <h3>TESTE</h3>
-        <img src="../img/joseph.webp" alt="" class="pfp">
-        <figcaption> <!-- Usuário ou os atributos do Stand -->
-            <p>Usuário: Jotaro Kujo</p>
-            <p>Overrall: A</p>
+            <p>Usuário: {{stand.usuario}}</p>
+            <p>Overrall: {{stand.overall}}</p>
         </figcaption> 
     </figure>
     </div>
 
-    <button class="VerMais">Ver mais...</button>
+    <button class="VerMais" @click="ExpandirBotao('stands')"> {{ LimiteStands < DadosStands.length ? 'Ver mais...' : 'Ver menos...' }}</button>
 
     </section>
 
@@ -151,6 +90,7 @@
   <p>©Isaque and Lucas (>_<)</p> 
 </footer>
 
-    <script src="../javascript/script.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../javascript/vue.js"></script>
 </body>
 </html>
