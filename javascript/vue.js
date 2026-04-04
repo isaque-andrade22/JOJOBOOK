@@ -4,8 +4,10 @@ createApp({
 
     data() {
         return{
-            DadosJson: [],
-            LimiteAtual: 4,
+            DadosChars: [],
+            DadosStands: [],
+            LimiteChars: 4,
+            LimiteStands: 4
         }
     },
 
@@ -14,7 +16,7 @@ createApp({
         this.BuscarDados();
 
         console.log("Teste se os dados foram certos:")
-        console.log(this.DadosJson)
+        console.log(this.DadosChars)
     },
 
     methods: {
@@ -25,22 +27,29 @@ createApp({
             console.log("dados carregados:");
             console.log(dados);
 
-            this.DadosJson = dados
+            this.DadosChars = dados["personagens"]
+            this.DadosStands = dados["stands"]
+
         },
         
-        ExpandirBotao() {
-            if (this.LimiteAtual <= this.DadosJson.length) {
-                this.LimiteAtual +=4
-            } else {
-                this.LimiteAtual = 4;
-                this.$refs.tituloPersonagens.scrollIntoView({ behavior: 'smooth' })
+        ExpandirBotao(categoria) {
+            if (categoria === 'personagens'){
+                if (this.LimiteChars <= this.DadosChars.length) {
+                    this.LimiteChars +=4
+                } else {
+                    this.LimiteChars = 4;
+                    this.$nextTick(() => {this.$refs.tituloPersonagens.scrollIntoView({ behavior: 'smooth' })})
+                }
+            }
+            
+            else if (categoria === 'stands') {
+                if (this.LimiteStands <= this.DadosStands.length) {
+                    this.LimiteStands +=4
+                } else {
+                    this.LimiteStands = 4;
+                    this.$nextTick(() => {this.$refs.tituloStands.scrollIntoView({ behavior: 'smooth' })});
+                }
             }
         },
-
-        RetrairBotao() {
-            if (this.LimiteAtual < 4) {
-                this.LimiteAtual -=4
-            } else {return}
-        }
     }
 }).mount('#app');
