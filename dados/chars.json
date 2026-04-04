@@ -19,6 +19,7 @@
     "id": 3,
     "nome": "Jotaro Kujo",
     "imagem": "../img/Jotaro_Kujo.webp",
+    "stand_imagem": "../img/StarPlatinumInfobox.webp",
     "stand": "Star Platinum",
     "parte": "Stardust Crusaders"
   }
