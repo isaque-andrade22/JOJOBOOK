@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
-:root{ 
-    --BgColor: rgb(136, 0, 116); 
+:root{ /*PRECISAMOS DEFINIR UMA PALETA DE CORES URGENTE, tá muito meme ir tacando cor aleatoriamente*/
+    --BgColor: #880074; 
     --BgGradColor: black;
     --TextColor: white;
-    --TextFont: 'Lora'
-}
+    --TextFont: 'Lora'; 
 
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+    --BgColorCards: #660626; /*Cor do botão das paginas das partes, preciso escolher uma cor melhor dps*/
+    --borderCards: #20031b;
+}
 
 
 body{
@@ -125,7 +127,7 @@ nav.navPT1 ul li:not(:last-child){
     border-right:  solid 2px;
     padding-right: 35px; /* arrumei o alinhamento das rotas no header  */
 }
-#CabeçalhoPT1{
+#cabecalhoPT1{
     size: auto;
 }
 
