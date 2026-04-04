@@ -5,6 +5,7 @@ createApp({
     data() {
         return{
             DadosJson: [],
+            LimiteAtual: 4,
         }
     },
 

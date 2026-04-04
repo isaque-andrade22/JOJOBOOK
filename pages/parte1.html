@@ -46,7 +46,7 @@
     <h2>PERSONAGENS</h2>
 
     <div class="grid-galeria">
-    <figure v-for="char in DadosJson" :key="char.id">
+    <figure v-for="char in DadosJson.slice(0, LimiteAtual)" :key="char.id">
         <h3>{{char.nome}}</h3> <!-- Nome personagem -->
 
         <img :src="char.imagem" alt="" class="pfp">
@@ -61,7 +61,7 @@
     </figure>
     </div>
 
-    <button class="VerMais">Ver mais...</button>
+    <button class="VerMais" @click="LimiteAtual+=4" v-if="LimiteAtual < DadosJson.length">Ver mais...</button>
 
     </section>
 
