@@ -1,0 +1,57 @@
+{
+    "personagens":[
+  {
+    "id": 0,
+    "nome": "NOME",
+    "idade": 0,
+    "imagem": "../img/CAMINHO_DA_IMAGEM.JPG",
+    "funcao": "EX: JOJO, JOBRO, vilão...",
+    "tipo_poder": "Ex: Hamon ou Stand ou null",
+    "nome_poder": "STAND OU NULL",
+    "parte": "Parte principal",
+
+    "detalhes": {
+        "bio": "TEXTO_DA_BIOGRAFIA_AQUI",
+        "nacionalidade": "NACIONALIDADE",
+        "ocupacao": "Estudante",
+        "status": "EX: Vivo, Morto ou Deconhecido",
+        "personalidade": "TEXTO_PERSONALIDADE",
+        "bordao": "Ex: MUDA MUDA MUDA",
+        "pai": "NOME_PAI OU DESCONHECIDO",
+        "mae": "NOME_MÃE OU DESCONHECIDO",
+        "filhos": ["NOME_FILHO_1", "nOME_FILHO_2"],
+        "aparicoes": ["PARTE_N°: nome parte"],
+        "legado": "Texto do legado"
+    }
+  }
+],
+
+    "stands": [
+        {
+    "id": 0,
+    "nome": "NOME",
+    "usuario": "NOME_USUARIO",
+    "overall": "Ex: A, B, C...",
+    "imagem": "../img/CAMINHO_DA_IMAGEM.JPG",
+    "parte": "Parte principal",
+
+    "status": {
+        "poder_destrutivo": "X",
+        "velocidade": "X",
+        "alcance": "X",
+        "durabilidade": "X",
+        "precisao": "X",
+        "potencial": "X"
+        },
+
+    "detalhes": {
+        "tipo": "Ex: curto alcance, automático, colõnia...",
+        "referencia": "Ex: Carta de taro, banda, musica...",
+        "habilidades": ["Ex: Explodir tudo que toca.", "EX: Avançar o tempo."],
+        "variantes": ["REQUIEM", "ATOS"],
+        "aparicoes": ["PARTE_N°: nome parte"]
+    }
+    }
+]
+
+}
