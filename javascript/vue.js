@@ -7,13 +7,15 @@ createApp({
             DadosChars: [],
             DadosStands: [],
             LimiteChars: 4,
-            LimiteStands: 4
+            LimiteStands: 4,
+            ParteNumeroAtual: 1
         }
     },
 
     mounted() {
         console.log("Teste se a página carrega");
         const parametro = new URLSearchParams(window.location.search).get('parte')
+        this.ParteNumeroAtual = parametro
         console.log(parametro)
 
         this.BuscarDados(parametro);
