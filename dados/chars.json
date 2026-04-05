@@ -1,217 +1,282 @@
-
-
-{"personagens":[
-  {
-    "id": 1,
-    "nome": "Jonathan Joestar",
-    "idade": 17,
-    "imagem": "../img/Jonathan_Joestar.png",
-    "funcao": "JOJO",
-    "stand": "hamon",
-    "parte": "Phantom Blood"
-  },
-  {
-    "id": 2,
-    "nome": "Joseph Joestar",
-    "idade": 17,
-    "imagem": "../img/joseph.webp",
-    "funcao": "JOJO",
-    "stand": "Hermit Purple",
-    "parte": "Battle Tendency"
-  },
-  {
-    "id": 3,
-    "nome": "Jotaro Kujo",
-    "idade": 17,
-    "imagem": "../img/Jotaro_Kujo.webp",
-    "stand_imagem": "../img/StarPlatinumInfobox.webp",
-    "stand": "Star Platinum",
-    "parte": "Stardust Crusaders"
-  },
-
-  {
-    "id": 4,
-    "nome": "Josuke higashikata",
-    "idade": 17,
-    "imagem": "../img/Josuke.jpg",
-    "funcao": "JOJO",
-    "stand": "Crazy diamond",
-    "parte": "Diamond is Unbreakable"
-  },
-
-  {
-    "id": 5,
-    "nome": "Giorno Giovanna",
-    "idade": 17,
-    "imagem": "../img/giorno.webp",
-    "funcao": "JOJO",
-    "stand": "Golden experience",
-    "parte": "Golden wind"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  },
-
-  {
-    "id": 7,
-    "nome": "Koichi Hirose",
-    "idade": 17,
-    "imagem": "../img/koichi.png",
-    "funcao": "JOBRO",
-    "stand": "Echoes",
-    "parte": "Diamond is Unbreakable"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  },
-
-  {
-    "id": 6,
-    "nome": "Jolyne Kujoh",
-    "idade": 17,
-    "imagem": "../img/jolyne.png",
-    "funcao": "JOJO",
-    "stand": "Stone Free",
-    "parte": "Stone Ocean"
-  }
-],
-
+{
+  "personagens": [
+    {
+      "id": 1,
+      "nome": "Jonathan Joestar",
+      "idade": 17,
+      "imagem": "../img/Jonathan_Joestar.png",
+      "funcao": "JOJO",
+      "tipo_poder": "Hamon",
+      "nome_poder": null,
+      "parte": "Phantom Blood",
+      "detalhes": {
+        "bio": "Texto de teste para ver se a bio do Jonathan quebra a linha no CSS...",
+        "nacionalidade": "Britânico",
+        "ocupacao": "Estudante",
+        "status": "Morto",
+        "personalidade": "Cavalheiro",
+        "bordao": "DIOOO!",
+        "pai": "George Joestar",
+        "mae": "Mary Joestar",
+        "filhos": ["George Joestar II", "Giorno Giovanna"],
+        "aparicoes": ["Parte 1: Phantom Blood"],
+        "legado": "Teste de legado do personagem"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Joseph Joestar",
+      "idade": 18,
+      "imagem": "../img/joseph.webp",
+      "funcao": "JOJO",
+      "tipo_poder": "Hamon",
+      "nome_poder": "Hermit Purple",
+      "parte": "Battle Tendency",
+      "detalhes": {
+        "bio": "Texto de teste Joseph...",
+        "nacionalidade": "Britânico/Americano",
+        "ocupacao": "Agente Imobiliário",
+        "status": "Vivo",
+        "personalidade": "Trapaceiro",
+        "bordao": "Sua próxima fala será...",
+        "pai": "George Joestar II",
+        "mae": "Lisa Lisa",
+        "filhos": ["Holly Kujo", "Josuke Higashikata"],
+        "aparicoes": ["Parte 2", "Parte 3", "Parte 4"],
+        "legado": "Salvou o mundo dos Homens do Pilar"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Jotaro Kujo",
+      "idade": 17,
+      "imagem": "../img/Jotaro_Kujo.webp",
+      "funcao": "JOJO",
+      "tipo_poder": "Stand",
+      "nome_poder": "Star Platinum",
+      "parte": "Stardust Crusaders",
+      "detalhes": {
+        "bio": "Texto de teste Jotaro...",
+        "nacionalidade": "Japonês",
+        "ocupacao": "Estudante",
+        "status": "Vivo",
+        "personalidade": "Estoico",
+        "bordao": "Yare Yare Daze",
+        "pai": "Sadao Kujo",
+        "mae": "Holly Kujo",
+        "filhos": ["Jolyne Kujoh"],
+        "aparicoes": ["Parte 3", "Parte 4", "Parte 5", "Parte 6"],
+        "legado": "Derrotou DIO"
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Josuke Higashikata",
+      "idade": 16,
+      "imagem": "../img/Josuke.jpg",
+      "funcao": "JOJO",
+      "tipo_poder": "Stand",
+      "nome_poder": "Crazy Diamond",
+      "parte": "Diamond is Unbreakable",
+      "detalhes": {
+        "bio": "Texto de teste Josuke...",
+        "nacionalidade": "Japonês",
+        "ocupacao": "Estudante",
+        "status": "Vivo",
+        "personalidade": "Explosivo (se zoar o cabelo)",
+        "bordao": "Gureto daze",
+        "pai": "Joseph Joestar",
+        "mae": "Tomoko Higashikata",
+        "filhos": [],
+        "aparicoes": ["Parte 4"],
+        "legado": "Protegeu Morioh"
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Giorno Giovanna",
+      "idade": 15,
+      "imagem": "../img/giorno.webp",
+      "funcao": "JOJO",
+      "tipo_poder": "Stand",
+      "nome_poder": "Gold Experience",
+      "parte": "Golden Wind",
+      "detalhes": {
+        "bio": "Texto de teste Giorno...",
+        "nacionalidade": "Italiano",
+        "ocupacao": "Gângster",
+        "status": "Vivo",
+        "personalidade": "Determinado",
+        "bordao": "Eu, Giorno Giovanna, tenho um sonho",
+        "pai": "DIO / Jonathan",
+        "mae": "Desconhecida",
+        "filhos": [],
+        "aparicoes": ["Parte 5"],
+        "legado": "Virou chefe da Passione"
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Jolyne Kujoh",
+      "idade": 19,
+      "imagem": "../img/jolyne.png",
+      "funcao": "JOJO",
+      "tipo_poder": "Stand",
+      "nome_poder": "Stone Free",
+      "parte": "Stone Ocean",
+      "detalhes": {
+        "bio": "Texto de teste Jolyne...",
+        "nacionalidade": "Americana",
+        "ocupacao": "Detenta",
+        "status": "Desconhecido",
+        "personalidade": "Rebelde",
+        "bordao": "Yare Yare Dawa",
+        "pai": "Jotaro Kujo",
+        "mae": "Desconhecida",
+        "filhos": [],
+        "aparicoes": ["Parte 6"],
+        "legado": "Lutou contra Pucci"
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Koichi Hirose",
+      "idade": 15,
+      "imagem": "../img/koichi.png",
+      "funcao": "JOBRO",
+      "tipo_poder": "Stand",
+      "nome_poder": "Echoes",
+      "parte": "Diamond is Unbreakable",
+      "detalhes": {
+        "bio": "Texto de teste Koichi...",
+        "nacionalidade": "Japonês",
+        "ocupacao": "Estudante",
+        "status": "Vivo",
+        "personalidade": "Medroso mas corajoso",
+        "bordao": "S-H-I-T!",
+        "pai": "Desconhecido",
+        "mae": "Desconhecida",
+        "filhos": [],
+        "aparicoes": ["Parte 4", "Parte 5"],
+        "legado": "Cara confiável"
+      }
+    }
+  ],
   "stands": [
     {
-    "id": 1,
-    "nome": "Star Platinum",
-    "usuario": "Jotaro Kujo",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 2,
-    "nome": "Crazy Diamonds",
-    "usuario": "Josuke Higashikata",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 3,
-    "nome": "Golden experience",
-    "usuario": "Giorno Giovanna",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 4,
-    "nome": "Jolyne Kujoh",
-    "usuario": "Stone Free",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 5,
-    "nome": "Echoes",
-    "usuario": "Koichi Hirose",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 5,
-    "nome": "Echoes",
-    "usuario": "Koichi Hirose",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 5,
-    "nome": "Echoes",
-    "usuario": "Koichi Hirose",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 5,
-    "nome": "Echoes",
-    "usuario": "Koichi Hirose",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  },
-  {
-    "id": 5,
-    "nome": "Echoes",
-    "usuario": "Koichi Hirose",
-    "overall": "a",
-    "imagem": "../img/star_platinum.png",
-    "parte": "Stardust Crusaders"
-  }
+      "id": 1,
+      "nome": "Star Platinum",
+      "usuario": "Jotaro Kujo",
+      "overall": "A",
+      "imagem": "../img/star_platinum.png",
+      "parte": "Stardust Crusaders",
+      "status": {
+        "poder_destrutivo": "A",
+        "velocidade": "A",
+        "alcance": "C",
+        "durabilidade": "A",
+        "precisao": "A",
+        "potencial": "A"
+      },
+      "detalhes": {
+        "tipo": "Curto Alcance",
+        "referencia": "A Estrela (Tarot)",
+        "habilidades": ["Super Força", "Precisão Cirúrgica", "Star Finger"],
+        "variantes": ["Star Platinum: The World"],
+        "aparicoes": ["Parte 3", "Parte 4", "Parte 6"]
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Crazy Diamond",
+      "usuario": "Josuke Higashikata",
+      "overall": "A",
+      "imagem": "../img/star_platinum.png",
+      "parte": "Diamond is Unbreakable",
+      "status": {
+        "poder_destrutivo": "A",
+        "velocidade": "A",
+        "alcance": "D",
+        "durabilidade": "B",
+        "precisao": "B",
+        "potencial": "C"
+      },
+      "detalhes": {
+        "tipo": "Curto Alcance",
+        "referencia": "Shine On You Crazy Diamond (Pink Floyd)",
+        "habilidades": ["Restauração", "Super Força"],
+        "variantes": [],
+        "aparicoes": ["Parte 4"]
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Gold Experience",
+      "usuario": "Giorno Giovanna",
+      "overall": "A",
+      "imagem": "../img/star_platinum.png",
+      "parte": "Golden Wind",
+      "status": {
+        "poder_destrutivo": "C",
+        "velocidade": "A",
+        "alcance": "C",
+        "durabilidade": "D",
+        "precisao": "C",
+        "potencial": "A"
+      },
+      "detalhes": {
+        "tipo": "Curto Alcance",
+        "referencia": "The Gold Experience (Prince)",
+        "habilidades": ["Criação de Vida", "Sensor de Vida"],
+        "variantes": ["Gold Experience Requiem"],
+        "aparicoes": ["Parte 5"]
+      }
+    },
+    {
+      "id": 4,
+      "nome": "Stone Free",
+      "usuario": "Jolyne Kujoh",
+      "overall": "A",
+      "imagem": "../img/star_platinum.png",
+      "parte": "Stone Ocean",
+      "status": {
+        "poder_destrutivo": "A",
+        "velocidade": "B",
+        "alcance": "C",
+        "durabilidade": "A",
+        "precisao": "C",
+        "potencial": "A"
+      },
+      "detalhes": {
+        "tipo": "Curto Alcance",
+        "referencia": "Stone Free (Jimi Hendrix)",
+        "habilidades": ["Desfiar em cordas", "Ouvir a distância"],
+        "variantes": [],
+        "aparicoes": ["Parte 6"]
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Echoes",
+      "usuario": "Koichi Hirose",
+      "overall": "B",
+      "imagem": "../img/star_platinum.png",
+      "parte": "Diamond is Unbreakable",
+      "status": {
+        "poder_destrutivo": "E",
+        "velocidade": "E",
+        "alcance": "B",
+        "durabilidade": "B",
+        "precisao": "C",
+        "potencial": "A"
+      },
+      "detalhes": {
+        "tipo": "Evolutivo",
+        "referencia": "Echoes (Pink Floyd)",
+        "habilidades": ["Gerar som", "Tornar palavras realidade", "Aumentar peso"],
+        "variantes": ["Act 1", "Act 2", "Act 3"],
+        "aparicoes": ["Parte 4", "Parte 5"]
+      }
+    }
   ]
 }
