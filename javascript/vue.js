@@ -7,21 +7,26 @@ createApp({
             DadosChars: [],
             DadosStands: [],
             LimiteChars: 4,
-            LimiteStands: 4
+            LimiteStands: 4,
+            ParteNumeroAtual: 1
         }
     },
 
     mounted() {
         console.log("Teste se a página carrega");
-        this.BuscarDados();
+        const parametro = new URLSearchParams(window.location.search).get('parte')
+        this.ParteNumeroAtual = parametro
+        console.log(parametro)
+
+        this.BuscarDados(parametro);
 
         console.log("Teste se os dados foram certos:")
         console.log(this.DadosChars)
     },
 
     methods: {
-        async BuscarDados(){
-            const JsonDados = await(fetch("../dados/chars.json"));
+        async BuscarDados(numeroParte){
+            const JsonDados = await(fetch(`../dados/parte${numeroParte}.json`));
             const dados = await JsonDados.json();
             
             console.log("dados carregados:");
