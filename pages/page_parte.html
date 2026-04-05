@@ -52,10 +52,9 @@
         <img :src="char.imagem" :alt="'Foto de ' + char.nome" class="pfp">
 
         <figcaption> <!-- Poder ou stand ou qualquer outra coisa -->
-            <p>Texto de teste do PERSONAGENS</p>
             <p>Função: {{char.funcao}}</p>
             <p>Idade: {{char.idade}}</p>
-            <p>Poder: {{char.stand}}</p>
+            <p>{{ char.nome_poder === null ? 'Poder: ' + char.tipo_poder : char.tipo_poder + ': ' + char.nome_poder }}</p>
         </figcaption> 
 
     </figure>
