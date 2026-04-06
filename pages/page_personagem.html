@@ -28,24 +28,27 @@
 
 </header>
 
-<main>
+<main class="main-personagem" >
  <div class="container_biografia" >
 
 
 <figure class="moldura">
     <img class="imagem_moldura"  :src="DadosChar.imagem" alt="jotaro">
-    <figcaption class="nome_personagem" >{{DadosChar.nome}}</figcaption>
+<div class="bio-figureCaption">
+    <figcaption>{{DadosChar.nome}}</figcaption>
+    <figcaption>{{DadosChar.funcao}}</figcaption>
+    <figcaption>Parte: {{DadosChar.parte}}</figcaption>
+    <figcaption>{{DadosChar.tipo_poder}} : {{DadosChar.nome_poder}}</figcaption>
+    <figcaption>Idade: {{DadosChar.idade}}</figcaption>
+    <figcaption>Nacionalidade: {{DadosChar.detalhes?.nacionalidade}}</figcaption>
+    <figcaption>Ocupação: {{DadosChar.detalhes?.ocupacao}}</figcaption>
+    <figcaption>Status: {{DadosChar.detalhes?.status}}</figcaption>
 </figure>
+</div>
 
 <div class="bio-text">
-<h3>{{DadosChar.funcao}}</h3>
-<h3> Parte: {{DadosChar.parte}} </h3>
-<h3> {{DadosChar.tipo_poder}} : {{DadosChar.nome_poder}}</h3>
 
-<h3>Idade: {{DadosChar.idade}}</h3>
-<h3>Nacionalidade: {{DadosChar.detalhes?.nacionalidade}}</h3>
-<h3>Ocupação: {{DadosChar.detalhes?.ocupacao}} </h3>
-<h3>Status: {{DadosChar.detalhes?.status}} </h3>
+
 
 <h3>Bio:</h3>
 <p> {{DadosChar.detalhes?.bio}} </p>
@@ -76,8 +79,11 @@
 
 <h3>Legado:</h3>
 <p>{{DadosChar.detalhes?.legado}}</p>
+
 </div>
 </div>
+</div>
+
 </main>
     <footer>
         <p>©Isaque and Lucas (>_<)</p>
