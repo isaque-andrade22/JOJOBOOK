@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style-jojo.css">
 </head>
 
-<body>
+<body  id="app">
 
 <Header>
     <a href="../index.html"> 
@@ -18,22 +18,11 @@
     <nav class="navPT1" >
 
     <ul> 
-  <li><a href="parte1.html">Phantom Blood</a></li> 
-
-  <li><a href="parte2.html">Battle Tendency</a></li>
-
-  <li><a href="parte3.html">Stardust Crusaders</a></li>
-
-  <li><a href="parte4.html">Diamond is Unbreakable</a></li>
-
-  <li><a href="parte5.html">Vento Aureo</a></li>
-
-  <li><a href="parte6.html">Stone Ocean</a></li>
-
-  <li><a href="parte7.html">Steel Ball Run</a></li>
-
-  <li><a href="parte8.html">JoJolion</a></li>
-  </ul>
+    <li v-for="item in MenuPartes" :key="item.numero">
+        <a :href="`page_parte.html?parte=${item.numero}`">{{ item.nome }}</a>
+    </li>
+    
+</ul>
 </nav>
 </div>
 
@@ -44,26 +33,55 @@
 
 
 <figure class="moldura">
-    <img class="imagem_moldura"  src="../img/Jotaro_Kujo.webp" alt="jotaro">
-    <figcaption class="nome_personagem" >Jotaro Kujo</figcaption>
+    <img class="imagem_moldura"  :src="DadosChar.imagem" alt="jotaro">
+    <figcaption class="nome_personagem" >{{DadosChar.nome}}</figcaption>
 </figure>
-<h3>
-Jotaro Kujo (空条 承太郎)
-Jotaro Kujo é o protagonista de Stardust Crusaders (Parte 3) e o "JoJo" mais icônico da franquia. Inicialmente um delinquente juvenil de 17 anos, ele parte em uma jornada ao Egito para derrotar o vilão DIO e salvar a vida de sua mãe, Holly.
+<h3>{{DadosChar.funcao}}</h3>
+<h3> Parte: {{DadosChar.parte}} </h3>
+<h3> {{DadosChar.tipo_poder}} : {{DadosChar.nome_poder}}</h3>
 
-Características Principais:
-Stand: Star Platinum, conhecido por sua força devastadora, precisão e a habilidade de parar o tempo (The World).
+<h3>Idade: {{DadosChar.idade}}</h3>
+<h3>Nacionalidade: {{DadosChar.detalhes?.nacionalidade}}</h3>
+<h3>Ocupação: {{DadosChar.detalhes?.ocupacao}} </h3>
+<h3>Status: {{DadosChar.detalhes?.status}} </h3>
 
-Personalidade: Estoico, sério e de poucas palavras. Sua marca registrada é o bordão "Yare Yare Daze".
+<h3>Bio:</h3>
+<p> {{DadosChar.detalhes?.bio}} </p>
 
-Legado: Formou-se como biólogo marinho e atuou como mentor nas Partes 4 e 6, sendo o elo central entre as diferentes gerações da linhagem Joestar.
-</h3>    
+<h3>Bordão: <i>{{DadosChar.detalhes?.bordao}}</i></h3>
 
+<h3>Personalidade:</h3>
+<p> {{DadosChar.detalhes?.personalidade}} </p>
+
+<h3>Família:</h3>
+<ul>
+    <li>
+        <h4>Mãe: {{DadosChar.detalhes?.mae}}</h4>
+    </li>
+    <li>
+        <h4>Pai: {{DadosChar.detalhes?.pai}}</h4>
+    </li>
+    <li>
+        <h4>Filhos:</h4>
+        <p v-for="filho in DadosChar.detalhes?.filhos">{{filho}}</p>
+    </li>
+</ul>
+
+<h3>Aparições:</h3>
+<ul>
+    <li v-for="aparicao in DadosChar.detalhes?.aparicoes"><p>{{aparicao}}</p></li>
+</ul>
+
+<h3>Legado:</h3>
+<p>{{DadosChar.detalhes?.legado}}</p>
 
 </div>
 </main>
     <footer>
         <p>©Isaque and Lucas (>_<)</p>
     </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../javascript/personagem.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Phantom Blood</title>
     <link rel="stylesheet" href="../css/style-jojo.css">
 </head>
-<body class="parte1">
+<body class="parte1" id="app">
 
 
   
@@ -17,29 +17,19 @@
 <div id="cabecalhoPT1" >
     <h1>JOJOBOOK</h1>
     <nav class="navPT1" >
+
   <ul> 
-  <li><a href="parte1.html">Phantom Blood</a></li> 
+    <li v-for="item in MenuPartes" :key="item.numero">
+        <a :href="`page_parte.html?parte=${item.numero}`">{{ item.nome }}</a>
+    </li>
+</ul>
 
-  <li><a href="parte2.html">Battle Tendency</a></li>
-
-  <li><a href="parte3.html">Stardust Crusaders</a></li>
-
-  <li><a href="parte4.html">Diamond is Unbreakable</a></li>
-
-  <li><a href="parte5.html">Golden Wind</a></li>
-
-  <li><a href="parte6.html">Stone Ocean</a></li>
-
-  <li><a href="parte7.html">Steel Ball Run</a></li>
-
-  <li><a href="parte8.html">JoJolion</a></li>
-  </ul>
 </nav>
 </div>
 
 </header>
 
-<main id="app">
+<main>
 
     <section>
 
