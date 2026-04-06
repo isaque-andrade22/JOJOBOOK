@@ -31,13 +31,19 @@ header{
     height: auto;
     background-color: black;
     padding: 20px 20px 20px; /* Diminui o tamanho do header de 40 pra 20*/
-    
+    margin-right: 2px; ;
 
 }
+
+.header-home{
+    padding: 0
+;
+}
+
 .logo{
     float: left;
     width: auto;
-    height: 155px;
+    height: 135px;
     object-fit:scale-down;
 
 
@@ -204,7 +210,7 @@ button.VerMais:hover{
 
 
 .moldura{
-
+    max-height: min-content;
     text-align: center;
     font-size: 20px;
     margin-right: 0px;
@@ -221,15 +227,20 @@ img.imagem_moldura{
 .container_biografia{
     display: flex; /* Isso é pra colocar o texto do lado da moldura*/
     padding-top: 30px;  
-    
+
 }
 
 .nome_personagem{
     background-color: black;
 }
-.container_biografia h3{
-    padding-top: 60px; /*coloquei um espaço maior pra ficar mais centralizado com a imagem*/
+.container_biografia{
+    padding-top: 30px; /*coloquei um espaço maior pra ficar mais centralizado com a imagem*/
+    
+    padding-left: 30px;
+}
+.bio-text{
+    padding-top: 30px;
     background-color: rgb(0, 0, 0, 0.6);
-    padding-left: 60px;
+    padding-left: 30px;
 
 }
