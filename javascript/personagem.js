@@ -6,7 +6,18 @@ createApp({
         return{
             DadosChar: {},
             ParteNumeroAtual: 1,
-            IdPersonagem: 1
+            IdPersonagem: 1,
+        
+            MenuPartes: [
+            { numero: 1, nome: "Phantom Blood" },
+            { numero: 2, nome: "Battle Tendency" },
+            { numero: 3, nome: "Stardust Crusaders" },
+            { numero: 4, nome: "Diamond is Unbreakable" },
+            { numero: 5, nome: "Vento Aureo" },
+            { numero: 6, nome: "Stone Ocean" },
+            { numero: 7, nome: "Steel Ball Run" },
+            { numero: 8, nome: "JoJolion" }
+        ]
         }
     },
 
